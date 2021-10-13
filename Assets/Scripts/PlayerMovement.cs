@@ -23,15 +23,19 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Make all the physics calculation in fixedupdate method. It's better than update.
-        rb.AddForce(0, 0, zSpeedValue * Time.deltaTime);
+        //rb.AddForce(0, 0, zSpeedValue * Time.deltaTime);
+        rb.AddRelativeForce(Vector3.forward * zSpeedValue * Time.deltaTime - rb.velocity);
+        //rb.velocity = new Vector3(0, 0, zSpeedValue * Time.deltaTime);
 
         if (Input.GetKey("d"))
         {
             rb.AddForce(goSideValues * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            //rb.velocity = new Vector3(goSideValues * Time.deltaTime, 0, 0);
         }
         if (Input.GetKey("a"))
         {
             rb.AddForce(-goSideValues * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+            //rb.velocity = new Vector3(-goSideValues * Time.deltaTime, 0, 0);
         }
     }
 }
