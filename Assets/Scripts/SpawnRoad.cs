@@ -27,14 +27,6 @@ public class SpawnRoad : MonoBehaviour
         roads.SpawnRoadd();
         Destroy(gameObject, 1f);
 
-        //Destroy(gameObject);
-
-        //transform.position += new Vector3(0, 0, transform.GetChild(0).GetComponent<Renderer>().bounds.size.z * 5);
-        //GameObject newRoad = Instantiate(roadPrefab, currentRoads[0].transform.GetChild(0).GetComponent<Renderer>().bounds.size * 5, Quaternion.identity) as GameObject;
-        //currentRoads.Add(newRoad);
-        //Destroy(gameObject);
-
-        //Debug.Log("hit");
     }
 
     IEnumerator SpawnObstacless()

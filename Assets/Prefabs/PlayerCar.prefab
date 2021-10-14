@@ -120,7 +120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923770110916000964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalPosition: {x: 0, y: 1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1923770110850139055}
@@ -159,6 +159,7 @@ MonoBehaviour:
   rb: {fileID: 1923770110916000966}
   zSpeedValue: 5000
   goSideValues: 75
+  scoreText: {fileID: 0}
 --- !u!114 &1923770110916000967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +173,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 1923770110916000960}
+  endGameCanvas: {fileID: 0}
+  inGameCanvas: {fileID: 0}
 --- !u!65 &1923770110486075186
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -183,7 +186,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.3469503, y: 1.4778923, z: 5.3798285}
+  m_Size: {x: 1.72, y: 1.4778923, z: 4.98}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1923770110486075191
 PrefabInstance:

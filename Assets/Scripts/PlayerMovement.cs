@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,15 +9,18 @@ public class PlayerMovement : MonoBehaviour
     public float zSpeedValue;
     public float goSideValues;
 
+    public TextMeshProUGUI scoreText;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        scoreText.text = "0";
     }
 
     void Update()
     {
-            
+        scoreText.text = transform.position.z.ToString("0");
     }
 
     // Update is called once per frame
