@@ -32,17 +32,17 @@ public class SpawnRoad : MonoBehaviour
     IEnumerator SpawnObstacless()
     {
         List<int> whereToPlaced = new List<int>();
-        int numberOfSpawn = Random.Range(3, 5);
+        int numberOfSpawn = Random.Range(5, 7);
         Debug.Log(numberOfSpawn);
 
         for (int i = 0; i < numberOfSpawn; i++)
         {
-            int spawnPlace = Random.Range(1, 6);
+            int spawnPlace = Random.Range(1, 8);
+
             Transform spawnPoint = transform.GetChild(spawnPlace).transform;
 
             int whichObstacleToSpawn = Random.Range(0, obstacles.Length);
 
-           
             if (!whereToPlaced.Contains(spawnPlace))
             {
                 whereToPlaced.Add(spawnPlace);
@@ -53,7 +53,7 @@ public class SpawnRoad : MonoBehaviour
         }
            
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0f);
 
     }
 

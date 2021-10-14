@@ -7,8 +7,7 @@ public class PlayerCollision : MonoBehaviour
     public PlayerMovement playerMovement;
     public GameObject endGameCanvas;
     public GameObject inGameCanvas;
-    
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +19,7 @@ public class PlayerCollision : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter(Collision other)

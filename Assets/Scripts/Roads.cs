@@ -10,11 +10,10 @@ public class Roads : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < 15; i++)
+        for (int i = 0; i < 5; i++)
         {
             SpawnRoadd();
         }
-
     }
 
     // Update is called once per frame
@@ -27,7 +26,7 @@ public class Roads : MonoBehaviour
     {
 
         GameObject temp = Instantiate(roadPrefab, nextSpawnPoint, Quaternion.identity) as GameObject;
-        nextSpawnPoint = temp.transform.GetChild(6).transform.position;
+        nextSpawnPoint = temp.transform.GetChild(8).transform.position;
 
 
     }
