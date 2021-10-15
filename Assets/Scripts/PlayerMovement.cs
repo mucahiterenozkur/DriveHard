@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         scoreText.text = transform.position.z.ToString("0");
+
     }
 
     // Update is called once per frame

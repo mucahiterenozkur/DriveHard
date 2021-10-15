@@ -933,8 +933,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 9999999
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 99cd8c0eb52b102408f3f7da1de5a39a, type: 2}
-  m_sharedMaterial: {fileID: -2530081472465387240, guid: 99cd8c0eb52b102408f3f7da1de5a39a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 59d21c3d45a879446aeac2b651960b83, type: 2}
+  m_sharedMaterial: {fileID: 7654217449826481130, guid: 59d21c3d45a879446aeac2b651960b83, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -958,7 +958,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 77.8
+  m_fontSize: 100
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1995,22 +1995,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1923770110916000967, guid: 41bfdd3e72885a041a870457fadfaa78, type: 3}
-      propertyPath: _cam
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1923770110916000967, guid: 41bfdd3e72885a041a870457fadfaa78, type: 3}
-      propertyPath: darkLayer
-      value: 
-      objectReference: {fileID: 95648541}
-    - target: {fileID: 1923770110916000967, guid: 41bfdd3e72885a041a870457fadfaa78, type: 3}
-      propertyPath: _downAmount
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1923770110916000967, guid: 41bfdd3e72885a041a870457fadfaa78, type: 3}
-      propertyPath: _shakePower
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1923770110916000967, guid: 41bfdd3e72885a041a870457fadfaa78, type: 3}
       propertyPath: inGameCanvas
       value: 
       objectReference: {fileID: 377757176}
@@ -2018,10 +2002,6 @@ PrefabInstance:
       propertyPath: endGameCanvas
       value: 
       objectReference: {fileID: 2146547974}
-    - target: {fileID: 1923770110916000967, guid: 41bfdd3e72885a041a870457fadfaa78, type: 3}
-      propertyPath: _shakeDuration
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 1923770110916000967, guid: 41bfdd3e72885a041a870457fadfaa78, type: 3}
       propertyPath: inGameCanvasAnimator
       value: 

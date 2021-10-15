@@ -33,7 +33,7 @@ public class SpawnRoad : MonoBehaviour
     {
         List<int> whereToPlaced = new List<int>();
         int numberOfSpawn = Random.Range(5, 7);
-        Debug.Log(numberOfSpawn);
+        //Debug.Log(numberOfSpawn);
 
         for (int i = 0; i < numberOfSpawn; i++)
         {
