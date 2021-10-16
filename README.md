@@ -3,8 +3,8 @@
 Here you are the driver. You are driving in the opposite lane at 300 km/h. Unleash your inner madman and try to make the highest score! <br> <br> 
 This game is 3D endless racing game. Sounds, materials, animations, 3d objects, camera movement and more is included  in this project. <br> <br> 
 How to play: It's simple. Just use 'A' to go left and 'D' to go right. <br> <br> 
-<strong> Here's the gameplay video -->  </strong> <br><br>
-<strong> If you want to support me on itch.io or play the game -->  </strong> <br><br>
+<strong> Here's the gameplay video --> https://paply.org/drivehard </strong> <br><br>
+<strong> If you want to support me on itch.io or play the game --> </strong> <br><br>
 
 <strong> Intro </strong> <br><br>
 ![intro](https://user-images.githubusercontent.com/59232592/137591541-115c4f01-c0a5-4099-b2e0-9a3fb7245473.gif)
