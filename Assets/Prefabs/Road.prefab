@@ -99,6 +99,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 863086710}
+  - component: {fileID: 52135067}
+  - component: {fileID: 52135068}
   m_Layer: 0
   m_Name: NextSpawnPoint
   m_TagString: Untagged
@@ -114,12 +116,38 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863086709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1803354560078090166}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &52135067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863086709}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 36.528046, y: 6.403665, z: 1}
+  m_Center: {x: -0.37838364, y: 1.2531149, z: 0}
+--- !u!114 &52135068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863086709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39f7479321128fa448c8bd01a2f43582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnRoadPrefab: {fileID: 1803354560078090153}
 --- !u!1 &935416953
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +358,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803354558423614611}
   m_Material: {fileID: 13400000, guid: be3407d5b253091458208605253aa726, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -346,7 +374,7 @@ GameObject:
   - component: {fileID: 1803354558563868639}
   - component: {fileID: 1803354558563868636}
   - component: {fileID: 1803354558563868637}
-  - component: {fileID: 1803354558563868634}
+  - component: {fileID: 742931364}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -417,19 +445,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1803354558563868634
-BoxCollider:
+--- !u!64 &742931364
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803354558563868635}
-  m_Material: {fileID: 13400000, guid: be3407d5b253091458208605253aa726, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1803354559986533096
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +563,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1803354560078090166}
-  - component: {fileID: 1803354560078090167}
   - component: {fileID: 1803354560078090153}
   m_Layer: 0
   m_Name: Road
@@ -569,19 +597,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1803354560078090167
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803354560078090164}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 30.371136, y: 5.6139665, z: 3.3232422}
-  m_Center: {x: -0.062179565, y: 0.19106078, z: 97.55062}
 --- !u!114 &1803354560078090153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,7 +705,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803354560183660443}
   m_Material: {fileID: 13400000, guid: be3407d5b253091458208605253aa726, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}

@@ -30,7 +30,7 @@ public class PlayerCollision : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
 
         if(other.gameObject.tag == "Obstacle" || other.gameObject.tag == "SideWalls")
@@ -50,5 +50,5 @@ public class PlayerCollision : MonoBehaviour
 
     }
 
-    
+
 }

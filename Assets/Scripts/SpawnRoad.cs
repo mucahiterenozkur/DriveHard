@@ -7,6 +7,7 @@ public class SpawnRoad : MonoBehaviour
     //public Transform[] spawnPoints;
     private Roads roads;
     public GameObject[] obstacles;
+
     
     
     // Start is called before the first frame update
@@ -22,12 +23,12 @@ public class SpawnRoad : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        roads.SpawnRoadd();
-        Destroy(gameObject, 1f);
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    roads.SpawnRoadd();
+    //    Destroy(gameObject, 1f);
 
-    }
+    //}
 
     IEnumerator SpawnObstacless()
     {

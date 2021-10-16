@@ -25,7 +25,7 @@ public class Roads : MonoBehaviour
     public void SpawnRoadd()
     {
 
-        GameObject temp = Instantiate(roadPrefab, nextSpawnPoint, Quaternion.identity) as GameObject;
+        GameObject temp = Instantiate(roadPrefab, nextSpawnPoint, Quaternion.identity);
         nextSpawnPoint = temp.transform.GetChild(8).transform.position;
 
 
